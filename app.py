@@ -16,7 +16,7 @@ class User(db.Model):
 @app.route("/")
 def hello():
     user_list = User.query.all()
-    return render_template('hello.html', user_list=user_list)
+    return render_template('index.html', user_list=user_list)
 
 @app.route("/add_user", methods=['POST'])
 def add_user():

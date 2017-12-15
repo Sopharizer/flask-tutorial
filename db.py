@@ -10,5 +10,3 @@ Base = declarative_base(engine)
 class TT_user(Base):
     __tablename__ = "user"
     __table_args__ = {"autoload": True}
-
-q = session.
