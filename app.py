@@ -2,8 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/hello?charset=utf8'
-app.config['SECRET_KEY'] = 'secret key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hello.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
