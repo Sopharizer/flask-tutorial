@@ -1,2 +1,4 @@
 __pycache__/
 flask-tutorial-env/
+*.db
+flask-dev
